@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+  }
+
+.logo {
+    height: 4rem !important;
+}
+
+.cnt {
+    padding-top: 15vh !important;
+}
+
+.us {
+    font-weight: 400 !important;
+    width: 45rem;
+} 
+
+.we {
+    font-size: 2rem;
+}
+
+.wh, .ph {
+    width: 1rem;
+} 
+
+.h3 {
+    font-weight: normal;
+}
+
+.menu {
+    width: 2rem;
+}
+
+  
+  .animation-wrapper {
+    width: 40%;
+    position: absolute;
+    top: 50vh;
+    right: 0;
+    z-index: -8;
+  }
+  
+  .sphere-animation {
+    width: 580px;
+    height: 580px;
+    margin: -290px 0 0 -290px;
+  }
+  
+  .sphere path {
+    fill: url(#sphereGradient);
+    stroke-width: 1px;
+    stroke: rgba(80,80,80,.35);
+    backface-visibility: hidden;
+  }
+  
+  @media (min-width: 500px) {
+    .sphere path {
+      stroke-width: .4px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .us {
+        font-size: 2rem !important;
+        max-width: 80vw;
+    }
+    .animation-wrapper {
+        top: 50vh;
+        right: 0;
+        z-index: -8;
+      }
+    .sphere path{
+        stroke-width: 3px;
+    }
+    .we {
+        font-size: 1.5rem;
+        padding-bottom: 0.7rem;
+    }
+    .q {
+        font-size: 1.2rem;
+    }
+    .logo {
+        content: url(./assets/logo2.png);
+    }
+  }
